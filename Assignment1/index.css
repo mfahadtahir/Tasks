@@ -1,0 +1,273 @@
+body{
+    margin: 0px
+}
+
+/* Nav Bar Styling */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 15px
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.navbar li {
+    margin: 5px;
+    padding: 5px;
+    display: inline;
+}
+
+.navbar .search_icon{
+    font-size: 2rem;    
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .navbar .linkItems{
+        display: none;
+    }
+
+}
+
+
+/* Banner Styling */
+.banner {
+    width: 100%;
+    position: relative;
+}
+.banner img {
+    width: 100%;
+    height: 600px;
+}
+
+.banner h1 {
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+    right: 10%;
+    z-index: 1000;
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: 'Poiret One';
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+.banner h3 {
+    position: absolute;
+    bottom: 20%;
+    left: 13%;
+    right: 10%;
+    z-index: 1000;
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+
+    font-family: 'Poiret One';
+}
+
+/* Our Team */
+.our_team_section {
+    text-align: center;
+}
+
+.our_team_card{
+    display: inline-block;
+}
+.our_team_card img{
+    width: 180px;
+    height:180px;
+    border-radius: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .our_team_card {
+        min-width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .our_team_card {
+        min-width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .our_team_card {
+        min-width: 23%;
+    }
+}
+/* Our Work */
+
+.our_work_section {
+    background-color: rgb(36, 30, 30);
+    padding: 30px;
+    position: relative;
+}
+
+.our_work_section .our_work_summary {
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    padding: -10px;
+}
+
+.our_work_section .our_work_customer {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.our_work_section .our_work_customer img {
+    width: 100%;
+    height: 300px;
+}
+
+.our_work_section .plus_icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: -20px;
+    right: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .our_work_section div {
+        width: 99%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .our_work_section .our_work_summary {
+        width: 98%;
+        display: block;
+    }
+    .our_work_section .our_work_customer {
+        width: 31%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .our_work_section div {
+        width: 23%;
+    }
+}
+
+/* Contact Us */
+.contact_us_section .contact_detail {
+    display: inline-block;
+}
+
+.contact_us_section .contact_detail_content, .contact_us_section  .contact_form_inputs {
+    padding: 20px;
+}
+.contact_us_section .contact_detail h3 { 
+    border-bottom: 4px solid green;
+}
+
+.contact_us_section .contact_form {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact_us_section .contact_form input[type=text] {
+    width: 95%;
+    max-width: 95%;
+    margin-top: 5px;
+    padding: 15px;
+    height: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.contact_us_section .contact_form textarea {
+    width: 95%;
+    margin-top: 5px;
+    padding: 15px;
+    /* height: 15px; */
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.contact_us_section .contact_form button {
+    width: 80px;
+    margin-top: 5px;
+    padding: 15px;
+    border: 1px solid grey;
+    color: white;
+    background-color: rgb(33, 31, 31);
+    border-radius: 5px;
+}
+.contact_us_section .submit {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .contact_us_section .contact_detail {
+        width: 98%;
+    }
+    .contact_us_section .contact_form {
+        width: 98%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contact_us_section .contact_detail {
+        width: 49%;
+    }
+    .contact_us_section .contact_form {
+        width: 49%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact_us_section .contact_detail {
+        width: 33%;
+    }
+    .contact_us_section .contact_form {
+        width: 65%;
+    }
+}
+
+/* footer section */
+
+.footer {
+    background:rgb(33, 31, 31);
+    margin-top: 40px;
+    position: relative;
+}
+.footer .footer_content h4 {
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    padding: 5px
+}
+.footer .footer_icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.footer .up_arrow{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    right: 50px;
+}
